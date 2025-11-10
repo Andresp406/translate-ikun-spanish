@@ -4,13 +4,13 @@ Aplicación web interactiva para el diccionario de la lengua Ikʉn (Arhuaco) con
 
 ## ✨ Características
 
-- 🎙️ **Traductor con Voz (NUEVO)**: Traduce de Español a Ikʉn con síntesis de voz (TTS)
+- 🎙️ **Traductor con Voz**: Traduce de Español a Ikʉn con síntesis de voz (TTS)
 - 🔊 **Pronunciación**: Escucha cómo se pronuncian las palabras en Ikʉn
 - 🔍 **Búsqueda en tiempo real**: Busca palabras mientras escribes
 - 🌓 **Modo oscuro/claro**: Cambia entre temas según tu preferencia
 - 📱 **Diseño responsivo**: Funciona en móviles, tablets y escritorio
-- 📊 **Estadísticas**: Visualiza la cantidad de palabras por categoría
-- 🎨 **Interfaz moderna**: Diseño limpio con TailwindCSS
+- 📊 **Estadísticas interactivas**: Visualiza y filtra palabras por categoría
+- 🎨 **Interfaz moderna estilo Shazam**: Diseño vibrante con glassmorphism
 - ⚡ **API REST**: Backend rápido con FastAPI
 
 ## 🏗️ Estructura del Proyecto
@@ -25,194 +25,119 @@ diccionario-ikun/
 ├── frontend/
 │   ├── index.html              # Interfaz de usuario
 │   └── app.js                  # Lógica del frontend
+├── assets/                     # Recursos gráficos
+│   ├── logo.png                # Logo principal
+│   ├── favicon.png             # Favicon
+│   └── *.svg                   # Logos vectorizados
+├── documentation/              # Documentación
+│   ├── README.md               # Guía completa
+│   ├── MODULO_VOZ.md          # Documentación TTS
+│   ├── DISENO_SHAZAM.md       # Guía de diseño
+│   ├── LOGOS.md               # Documentación logos
+│   └── CHANGELOG.md           # Historial de cambios
+├── start.sh                    # Script de inicio rápido
 └── README.md                   # Este archivo
 ```
 
-## 🚀 Instalación y Uso
+## 🚀 Inicio Rápido
 
-### Backend (FastAPI)
+### Opción 1: Script de inicio automático
 
-1. **Navega al directorio del backend**:
-   ```bash
-   cd backend
-   ```
+```bash
+./start.sh
+```
 
-2. **Crea un entorno virtual** (recomendado):
-   ```bash
-   python3 -m venv venv
-   source venv/bin/activate  # En Linux/Mac
-   # venv\Scripts\activate   # En Windows
-   ```
+### Opción 2: Inicio manual
 
-3. **Instala las dependencias**:
-   ```bash
-   pip install -r requirements.txt
-   ```
+**Backend:**
+```bash
+cd backend
+python3 -m venv venv
+source venv/bin/activate
+pip install -r requirements.txt
+python main.py
+```
 
-4. **Ejecuta el servidor**:
-   ```bash
-   python main.py
-   ```
-   
-   El servidor estará disponible en: `http://localhost:8000`
+**Frontend:**
+```bash
+cd frontend
+python3 -m http.server 3000
+```
 
-### Frontend
+Luego visita: `http://localhost:3000`
 
-1. **Navega al directorio del frontend**:
-   ```bash
-   cd frontend
-   ```
+## 📡 API
 
-2. **Abre el archivo HTML**:
-   - Simplemente abre `index.html` en tu navegador
-   - O usa un servidor local (recomendado):
-   
-   ```bash
-   # Con Python 3
-   python3 -m http.server 3000
-   
-   # Con Node.js (si tienes http-server instalado)
-   npx http-server -p 3000
-   ```
-   
-   Luego visita: `http://localhost:3000`
+La API REST está disponible en `http://localhost:8000`
 
-## 📡 Endpoints de la API
+- **Documentación interactiva**: http://localhost:8000/docs
+- **ReDoc**: http://localhost:8000/redoc
+
+### Endpoints principales
 
 | Endpoint | Método | Descripción |
 |----------|--------|-------------|
-| `/` | GET | Información de la API |
 | `/api/diccionario` | GET | Obtener todo el diccionario |
 | `/api/buscar?palabra=xxx` | GET | Buscar una palabra |
-| `/api/estadisticas` | GET | Obtener estadísticas del diccionario |
+| `/api/estadisticas` | GET | Obtener estadísticas |
 
-### Ejemplos de uso
+## 🎯 Características Principales
 
-```bash
-# Obtener todo el diccionario
-curl http://localhost:8000/api/diccionario
+### 🎙️ Traductor con Voz
+- Traduce de Español a Ikʉn en tiempo real
+- Síntesis de voz con Web Speech API
+- Interfaz intuitiva con animaciones
 
-# Buscar la palabra "agua"
-curl "http://localhost:8000/api/buscar?palabra=agua"
+### 📊 Estadísticas Interactivas
+- Visualización dinámica de categorías
+- Filtrado por categoría con un clic
+- Modal personalizado con diseño Shazam
 
-# Obtener estadísticas
-curl http://localhost:8000/api/estadisticas
-```
+### 🎨 Diseño Moderno
+- Inspirado en la app Shazam
+- Gradientes vibrantes y animaciones fluidas
+- Glassmorphism y efectos visuales
 
-## 🎯 Uso de la Aplicación
+## 🛠️ Tecnologías
 
-1. **🎙️ Traductor con Voz (NUEVO)**:
-   - Escribe una palabra en español en el campo verde "Traductor con Voz"
-   - Haz clic en "🔄 Traducir" o presiona Enter
-   - Verás la traducción en Ikʉn
-   - Haz clic en el botón 🔊 para escuchar la pronunciación
-   - **Navegadores recomendados**: Chrome, Edge, Safari
+**Backend:**
+- Python 3.8+
+- FastAPI
+- Uvicorn
 
-2. **Búsqueda en tiempo real**: 
-   - Escribe en el campo de búsqueda
-   - Los resultados aparecen automáticamente
-   - Funciona tanto para palabras en Ikʉn como en Español
+**Frontend:**
+- HTML5, CSS3, JavaScript
+- TailwindCSS
+- Web Speech API
 
-3. **Ver todo el diccionario**:
-   - Haz clic en "📖 Ver todo el diccionario"
-   - Muestra todas las palabras organizadas por categoría
+## 📚 Documentación Completa
 
-4. **Modo oscuro**:
-   - Haz clic en el ícono de sol/luna en la esquina superior derecha
-   - La preferencia se guarda en el navegador
+Para más información, consulta los archivos en `/documentation`:
 
-## 📊 Categorías del Diccionario
+- [**Guía Completa**](documentation/README.md) - Instalación y uso detallado
+- [**Módulo de Voz**](documentation/MODULO_VOZ.md) - TTS y troubleshooting
+- [**Diseño Shazam**](documentation/DISENO_SHAZAM.md) - Guía de diseño UI
+- [**Logos**](documentation/LOGOS.md) - Documentación de recursos gráficos
+- [**Changelog**](documentation/CHANGELOG.md) - Historial de cambios
 
-- **Vocabulario**: Palabras generales
-- **Pronombres y Sufijos**: Elementos gramaticales
-- **Objetos**: Nombres de objetos
-- **Direcciones**: Ubicaciones y posiciones
-- **Saludos y Peticiones**: Frases comunes
-- **Números**: Sistema numérico
-- **Colores**: Nombres de colores
+## 🌍 Sobre el Proyecto
 
-## 🛠️ Tecnologías Utilizadas
-
-### Backend
-- **Python 3.8+**
-- **FastAPI**: Framework web moderno y rápido
-- **Uvicorn**: Servidor ASGI
-
-### Frontend
-- **HTML5**
-- **TailwindCSS**: Framework CSS utility-first
-- **JavaScript (Vanilla)**: Sin dependencias externas
-- **Web Speech API**: Síntesis de voz (Text-to-Speech)
-
-## 📝 Documentación
-
-### Documentación de la API
-
-FastAPI genera documentación interactiva automáticamente:
-
-- **Swagger UI**: http://localhost:8000/docs
-- **ReDoc**: http://localhost:8000/redoc
-
-### Módulo de Voz
-
-Para información detallada sobre el módulo de traducción con voz:
-- **Guía completa**: [MODULO_VOZ.md](MODULO_VOZ.md)
-- Incluye troubleshooting y compatibilidad de navegadores
-
-## 🔧 Desarrollo
-
-### Ejecutar en modo desarrollo
-
-Backend con auto-reload:
-```bash
-cd backend
-uvicorn main:app --reload --host 0.0.0.0 --port 8000
-```
-
-### Modificar el diccionario
-
-Edita el archivo `backend/diccionario-ikku.json` con la estructura:
-
-```json
-{
-  "seccion": [
-    {
-      "ikʉn": "palabra en ikʉn",
-      "espanol": "traducción al español"
-    }
-  ]
-}
-```
-
-## 🌐 CORS
-
-El backend está configurado para aceptar peticiones desde cualquier origen. Para producción, considera limitar los orígenes permitidos en `backend/main.py`:
-
-```python
-app.add_middleware(
-    CORSMiddleware,
-    allow_origins=["http://tu-dominio.com"],
-    # ...
-)
-```
-
-## 📄 Licencia
-
-Este proyecto está diseñado para preservar y facilitar el acceso a la lengua Ikʉn del pueblo Arhuaco.
+Este proyecto está desarrollado por el **Colectivo de Investigación "Traducciones del Corazón del Mundo"** en colaboración con la **Universidad del Magdalena**, con el objetivo de preservar y facilitar el acceso a la lengua Ikʉn del pueblo Arhuaco de la Sierra Nevada de Santa Marta, Colombia.
 
 ## 🤝 Contribuciones
 
-Las contribuciones son bienvenidas. Por favor:
-1. Haz fork del proyecto
-2. Crea una rama para tu feature (`git checkout -b feature/nueva-funcionalidad`)
-3. Commit tus cambios (`git commit -m 'Agregar nueva funcionalidad'`)
-4. Push a la rama (`git push origin feature/nueva-funcionalidad`)
+Las contribuciones son bienvenidas:
+
+1. Fork del proyecto
+2. Crea una rama (`git checkout -b feature/nueva-funcionalidad`)
+3. Commit (`git commit -m 'Agregar nueva funcionalidad'`)
+4. Push (`git push origin feature/nueva-funcionalidad`)
 5. Abre un Pull Request
 
-## 📧 Contacto
+## 📄 Licencia
 
-Para preguntas o sugerencias sobre el diccionario, por favor contacta a los mantenedores del proyecto.
+Este proyecto está diseñado para la preservación cultural y educativa de la lengua Ikʉn.
 
 ---
 
-**Nota**: Este diccionario tiene como objetivo preservar y promover la lengua Ikʉn del pueblo Arhuaco de la Sierra Nevada de Santa Marta, Colombia.
+✨ **Preservando la lengua del pueblo Arhuaco** • Santa Marta, Colombia
