@@ -1,5 +1,8 @@
 // Configuración de la API
-const API_URL = 'http://localhost:8000';
+// Usar la misma URL base para que funcione tanto localmente como con proxy/ngrok
+const API_URL = window.location.origin.includes('ngrok') || window.location.origin.includes(':5000') 
+    ? window.location.origin 
+    : 'http://localhost:8000';
 
 // Referencias a elementos del DOM
 const searchInput = document.getElementById('search-input');

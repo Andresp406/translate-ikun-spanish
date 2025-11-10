@@ -1,0 +1,99 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 120" width="400" height="120">
+  <defs>
+    <linearGradient id="azul" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e3a8a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#3b82f6;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="rojo" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#991b1b;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#dc2626;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Escudo principal -->
+  <g id="escudo" transform="translate(30, 10)">
+    <!-- Base del escudo -->
+    <path d="M 50 5 L 65 2 L 80 5 L 85 35 Q 85 55 65 65 Q 45 55 45 35 Z" 
+          fill="url(#azul)" stroke="#1e3a8a" stroke-width="2"/>
+    
+    <!-- Libro abierto central -->
+    <g id="libro">
+      <!-- Páginas -->
+      <path d="M 55 20 L 55 40 L 63 38 L 63 18 Z" fill="#fff" opacity="0.95"/>
+      <path d="M 67 18 L 67 38 L 75 40 L 75 20 Z" fill="#fff" opacity="0.95"/>
+      <!-- Lomo -->
+      <rect x="63" y="18" width="4" height="20" fill="#e5e7eb" opacity="0.8"/>
+      <!-- Detalles de páginas -->
+      <line x1="57" y1="25" x2="61" y2="25" stroke="#1e3a8a" stroke-width="0.5" opacity="0.4"/>
+      <line x1="57" y1="28" x2="61" y2="28" stroke="#1e3a8a" stroke-width="0.5" opacity="0.4"/>
+      <line x1="57" y1="31" x2="61" y2="31" stroke="#1e3a8a" stroke-width="0.5" opacity="0.4"/>
+      <line x1="69" y1="25" x2="73" y2="25" stroke="#1e3a8a" stroke-width="0.5" opacity="0.4"/>
+      <line x1="69" y1="28" x2="73" y2="28" stroke="#1e3a8a" stroke-width="0.5" opacity="0.4"/>
+      <line x1="69" y1="31" x2="73" y2="31" stroke="#1e3a8a" stroke-width="0.5" opacity="0.4"/>
+    </g>
+    
+    <!-- Ondas del mar (río Magdalena) -->
+    <g id="ondas" opacity="0.9">
+      <path d="M 50 47 Q 55 45 60 47 Q 65 49 70 47 Q 75 45 80 47" 
+            fill="none" stroke="#60a5fa" stroke-width="1.5"/>
+      <path d="M 50 50 Q 55 48 60 50 Q 65 52 70 50 Q 75 48 80 50" 
+            fill="none" stroke="#60a5fa" stroke-width="1.5"/>
+      <path d="M 52 53 Q 57 51 62 53 Q 67 55 72 53 Q 77 51 78 53" 
+            fill="none" stroke="#93c5fd" stroke-width="1.2"/>
+    </g>
+    
+    <!-- Estrella superior (excelencia) -->
+    <polygon points="65,8 66.5,12 70.5,12 67.5,14.5 68.5,18.5 65,16 61.5,18.5 62.5,14.5 59.5,12 63.5,12" 
+             fill="#fbbf24" stroke="#f59e0b" stroke-width="0.5"/>
+    
+    <!-- Laureles (opcional) -->
+    <path d="M 48 30 Q 45 35 48 40" fill="none" stroke="#10b981" stroke-width="1.5" opacity="0.6"/>
+    <path d="M 82 30 Q 85 35 82 40" fill="none" stroke="#10b981" stroke-width="1.5" opacity="0.6"/>
+  </g>
+  
+  <!-- Texto Universidad del Magdalena -->
+  <g id="texto" transform="translate(125, 0)">
+    <!-- UNIVERSIDAD -->
+    <text x="0" y="35" 
+          font-family="Arial, Helvetica, sans-serif" 
+          font-size="22" 
+          font-weight="bold" 
+          fill="#1e3a8a"
+          letter-spacing="0.5">
+      UNIVERSIDAD
+    </text>
+    
+    <!-- DEL MAGDALENA -->
+    <text x="0" y="60" 
+          font-family="Arial, Helvetica, sans-serif" 
+          font-size="20" 
+          font-weight="600" 
+          fill="#dc2626"
+          letter-spacing="0.3">
+      DEL MAGDALENA
+    </text>
+    
+    <!-- Línea decorativa -->
+    <line x1="0" y1="68" x2="220" y2="68" 
+          stroke="#3b82f6" stroke-width="1.5" opacity="0.4"/>
+    
+    <!-- Lema institucional -->
+    <text x="0" y="82" 
+          font-family="Arial, Helvetica, sans-serif" 
+          font-size="10" 
+          font-style="italic" 
+          fill="#4b5563"
+          letter-spacing="0.2">
+      Conocimiento • Innovación • Transformación
+    </text>
+    
+    <!-- Ubicación -->
+    <text x="0" y="98" 
+          font-family="Arial, Helvetica, sans-serif" 
+          font-size="9" 
+          font-weight="500" 
+          fill="#6b7280">
+      Santa Marta, Colombia
+    </text>
+  </g>
+</svg>
