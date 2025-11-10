@@ -1,0 +1,1144 @@
+{
+  "vocabulario": [
+    {
+      "ikʉn": "Lengua IKɄN",
+      "espanol": "Castellano"
+    },
+    {
+      "ikʉn": "Ema",
+      "espanol": "este / esto"
+    },
+    {
+      "ikʉn": "A’mia",
+      "espanol": "mujer"
+    },
+    {
+      "ikʉn": "Chinu",
+      "espanol": "cerdo"
+    },
+    {
+      "ikʉn": "Kʉtʉ",
+      "espanol": "pie"
+    },
+    {
+      "ikʉn": "Ɉe",
+      "espanol": "agua"
+    },
+    {
+      "ikʉn": "Ɉikawa",
+      "espanol": "Sangre, líquido para amansar serpiente"
+    },
+    {
+      "ikʉn": "wakʉn",
+      "espanol": "mirar"
+    },
+    {
+      "ikʉn": "Me’juno",
+      "espanol": "quieres"
+    },
+    {
+      "ikʉn": "Zori",
+      "espanol": "vete"
+    },
+    {
+      "ikʉn": "arunh",
+      "espanol": "pensar"
+    },
+    {
+      "ikʉn": "gukau",
+      "espanol": "entregar"
+    },
+    {
+      "ikʉn": "riwiʉn",
+      "espanol": "aprender"
+    },
+    {
+      "ikʉn": "gwati",
+      "espanol": "mujer arhuaca"
+    },
+    {
+      "ikʉn": "Guka up",
+      "espanol": "tome"
+    },
+    {
+      "ikʉn": "teti",
+      "espanol": "Hombre iku"
+    },
+    {
+      "ikʉn": "sakʉku",
+      "espanol": "cabeza"
+    },
+    {
+      "ikʉn": "komʉ",
+      "espanol": "uña"
+    },
+    {
+      "ikʉn": "kʉkʉ",
+      "espanol": "diente"
+    },
+    {
+      "ikʉn": "Ɉwawika",
+      "espanol": "corazón"
+    },
+    {
+      "ikʉn": "Chow",
+      "espanol": "chow sueño"
+    },
+    {
+      "ikʉn": "Nʉkʉnʉgui",
+      "espanol": "tengo"
+    },
+    {
+      "ikʉn": "Mari",
+      "espanol": "na’zanin tengo hambre"
+    },
+    {
+      "ikʉn": "Ey",
+      "espanol": "anachukwa hasta luego (quien sale)"
+    },
+    {
+      "ikʉn": "Kwaa",
+      "espanol": "a"
+    },
+    {
+      "ikʉn": "Kwi.",
+      "espanol": "Hombro"
+    },
+    {
+      "ikʉn": "Kwʉ",
+      "espanol": "escavar"
+    },
+    {
+      "ikʉn": "Swa",
+      "espanol": "quemar"
+    },
+    {
+      "ikʉn": "Swi",
+      "espanol": "quemar conjugado"
+    },
+    {
+      "ikʉn": "Gwa",
+      "espanol": "algo resbaladizo"
+    },
+    {
+      "ikʉn": "Gwi",
+      "espanol": "término espiritual (espacio matrimonia)"
+    },
+    {
+      "ikʉn": "Gwʉ",
+      "espanol": "algo que molesta en la garganta"
+    },
+    {
+      "ikʉn": "Ɉwa",
+      "espanol": "sangre, líquido para amansar culebras sol hombre"
+    },
+    {
+      "ikʉn": "Ɉwe",
+      "espanol": "rabia"
+    },
+    {
+      "ikʉn": "Ɉwi",
+      "espanol": "dinero  sol  dinero espiritual"
+    },
+    {
+      "ikʉn": "Twe",
+      "espanol": "oscuro,sucio color negro, nublado"
+    },
+    {
+      "ikʉn": "Twi",
+      "espanol": "oscuro(negro)"
+    },
+    {
+      "ikʉn": "A'mia",
+      "espanol": "mujer"
+    },
+    {
+      "ikʉn": "Ayu",
+      "espanol": "Coca"
+    },
+    {
+      "ikʉn": "Asa",
+      "espanol": "u Siéntase"
+    },
+    {
+      "ikʉn": "Ema",
+      "espanol": "este"
+    },
+    {
+      "ikʉn": "Emáy",
+      "espanol": "por aquí"
+    },
+    {
+      "ikʉn": "Esú",
+      "espanol": "wow"
+    },
+    {
+      "ikʉn": "Ekʉ",
+      "espanol": "aquí"
+    },
+    {
+      "ikʉn": "Eyma",
+      "espanol": "ese"
+    },
+    {
+      "ikʉn": "Eysa",
+      "espanol": "mortuoriaI"
+    },
+    {
+      "ikʉn": "Inʉ",
+      "espanol": "qué"
+    },
+    {
+      "ikʉn": "Isʉ",
+      "espanol": "hormiga"
+    },
+    {
+      "ikʉn": "ichʉ",
+      "espanol": "frijol"
+    },
+    {
+      "ikʉn": "Iba",
+      "espanol": "ahora"
+    },
+    {
+      "ikʉn": "Isʉn",
+      "espanol": "tejer"
+    },
+    {
+      "ikʉn": "Ikwun",
+      "espanol": "defender"
+    },
+    {
+      "ikʉn": "Owmʉn",
+      "espanol": "bañarse"
+    },
+    {
+      "ikʉn": "Okʉn",
+      "espanol": "fuera"
+    },
+    {
+      "ikʉn": "Otiki",
+      "espanol": "guartinaja"
+    },
+    {
+      "ikʉn": "Ozanamʉ",
+      "espanol": "rabia"
+    },
+    {
+      "ikʉn": "Okʉtʉ",
+      "espanol": "puerta"
+    },
+    {
+      "ikʉn": "Osi",
+      "espanol": "cuco"
+    },
+    {
+      "ikʉn": "Use'",
+      "espanol": "dentro"
+    },
+    {
+      "ikʉn": "Umʉnʉ.",
+      "espanol": "base"
+    },
+    {
+      "ikʉn": "Umʉ",
+      "espanol": "ojo"
+    },
+    {
+      "ikʉn": "Uku",
+      "espanol": "tabano"
+    },
+    {
+      "ikʉn": "Ucho",
+      "espanol": "guacarote"
+    },
+    {
+      "ikʉn": "Unaka",
+      "espanol": "tráelo"
+    },
+    {
+      "ikʉn": "ʉsi",
+      "espanol": "alergia"
+    },
+    {
+      "ikʉn": "ʉ",
+      "espanol": "ladrar"
+    },
+    {
+      "ikʉn": "Bema",
+      "espanol": "cuál"
+    },
+    {
+      "ikʉn": "Bemay",
+      "espanol": "dónde"
+    },
+    {
+      "ikʉn": "Bastin",
+      "espanol": "repartir, distribuir"
+    },
+    {
+      "ikʉn": "Bay",
+      "espanol": "weri – vamos pues"
+    },
+    {
+      "ikʉn": "Bunigʉmʉ",
+      "espanol": "problema"
+    },
+    {
+      "ikʉn": "I’ba",
+      "espanol": "juntos"
+    },
+    {
+      "ikʉn": "Kʉbé",
+      "espanol": "colgado"
+    },
+    {
+      "ikʉn": "Chwamʉ",
+      "espanol": "cuidar"
+    },
+    {
+      "ikʉn": "Cho",
+      "espanol": "parado (a)"
+    },
+    {
+      "ikʉn": "Chinchi",
+      "espanol": "grueso(a) /gordo (a)"
+    },
+    {
+      "ikʉn": "Chinu",
+      "espanol": "cerdo"
+    },
+    {
+      "ikʉn": "Charu",
+      "espanol": "carrizo"
+    },
+    {
+      "ikʉn": "Chosʉn",
+      "espanol": "poner, colocar"
+    },
+    {
+      "ikʉn": "Danun",
+      "espanol": "– regañar"
+    },
+    {
+      "ikʉn": "ʉnzatʉsʉya",
+      "espanol": "jugar"
+    },
+    {
+      "ikʉn": "Tegwe",
+      "espanol": "tío mayor"
+    },
+    {
+      "ikʉn": "Zaku",
+      "espanol": "madre"
+    },
+    {
+      "ikʉn": "Sinamʉ",
+      "espanol": "Ɉina familia(seres queridos)"
+    },
+    {
+      "ikʉn": "TégɄmɄ",
+      "espanol": "sobrino"
+    },
+    {
+      "ikʉn": "KakɄ/",
+      "espanol": "cheychi padre"
+    },
+    {
+      "ikʉn": "Zizi",
+      "espanol": "bebé"
+    },
+    {
+      "ikʉn": "Sisi",
+      "espanol": "por donde nacen"
+    },
+    {
+      "ikʉn": "Tutu",
+      "espanol": "mochila"
+    },
+    {
+      "ikʉn": "AmɄka",
+      "espanol": "estoy bien"
+    },
+    {
+      "ikʉn": "Za",
+      "espanol": "comer"
+    },
+    {
+      "ikʉn": "Chow",
+      "espanol": "chow nɄkɄnɄgui tengo sueño"
+    },
+    {
+      "ikʉn": "KumɄnɄkɄgin",
+      "espanol": "tengo sueño"
+    },
+    {
+      "ikʉn": "Ingú",
+      "espanol": "pequeño"
+    },
+    {
+      "ikʉn": "Kawa",
+      "espanol": "es"
+    },
+    {
+      "ikʉn": "Du",
+      "espanol": "kawa bonita"
+    },
+    {
+      "ikʉn": "Wasʉn",
+      "espanol": "perseguir"
+    },
+    {
+      "ikʉn": "Basʉm",
+      "espanol": "repartir"
+    },
+    {
+      "ikʉn": "Wesʉn",
+      "espanol": "entregar"
+    },
+    {
+      "ikʉn": "Bemay",
+      "espanol": "a donde/ hacia donde"
+    },
+    {
+      "ikʉn": "Aro",
+      "espanol": "arroz"
+    },
+    {
+      "ikʉn": "zamʉ",
+      "espanol": "comida"
+    },
+    {
+      "ikʉn": "Ayu",
+      "espanol": "coca"
+    },
+    {
+      "ikʉn": "Ɉe",
+      "espanol": "Mʉnsi agua dulce (agua panela)"
+    },
+    {
+      "ikʉn": "Te",
+      "espanol": "zanukwa haga silencio"
+    },
+    {
+      "ikʉn": "Te",
+      "espanol": "silencio"
+    },
+    {
+      "ikʉn": "Ɉe",
+      "espanol": "bunsi agua limpia"
+    },
+    {
+      "ikʉn": "Ana",
+      "espanol": "ya"
+    },
+    {
+      "ikʉn": "Yuikʉnʉ",
+      "espanol": "flojo"
+    },
+    {
+      "ikʉn": "Ɉʉrkʉnʉ",
+      "espanol": "fino"
+    },
+    {
+      "ikʉn": "Eymeykʉchʉ",
+      "espanol": "si"
+    },
+    {
+      "ikʉn": "O.",
+      "espanol": "Volver o repetir"
+    },
+    {
+      "ikʉn": "Ni",
+      "espanol": "afirmación"
+    },
+    {
+      "ikʉn": "Riwiʉn",
+      "espanol": "estoy"
+    },
+    {
+      "ikʉn": "Zey",
+      "espanol": "zey estoy feliz"
+    },
+    {
+      "ikʉn": "Naweri",
+      "espanol": "cuando"
+    },
+    {
+      "ikʉn": "Biri",
+      "espanol": "tiempo sin saber de ti"
+    },
+    {
+      "ikʉn": "Kwariwanu’",
+      "espanol": "triste"
+    },
+    {
+      "ikʉn": "O",
+      "espanol": "na’zunin tengo rabia"
+    },
+    {
+      "ikʉn": "Kʉna’tini",
+      "espanol": "tengo frío"
+    },
+    {
+      "ikʉn": "Cheywa",
+      "espanol": "esposo"
+    },
+    {
+      "ikʉn": "Amia",
+      "espanol": "esposa"
+    },
+    {
+      "ikʉn": "Nʉkʉnʉnin",
+      "espanol": "tengo"
+    },
+    {
+      "ikʉn": "Yʉ",
+      "espanol": "flojera"
+    },
+    {
+      "ikʉn": "Kʉkʉ",
+      "espanol": "diente"
+    },
+    {
+      "ikʉn": "Kʉkʉ",
+      "espanol": "patiru muela"
+    },
+    {
+      "ikʉn": "Umʉ",
+      "espanol": "ojo"
+    },
+    {
+      "ikʉn": "Kʉkwa",
+      "espanol": "oído"
+    },
+    {
+      "ikʉn": "Kukwa",
+      "espanol": "gakʉn oreja"
+    },
+    {
+      "ikʉn": "Guka",
+      "espanol": "toma(entrega)"
+    },
+    {
+      "ikʉn": "Ga",
+      "espanol": "dolor"
+    },
+    {
+      "ikʉn": "Ɉiwʉse",
+      "espanol": "en el mar"
+    },
+    {
+      "ikʉn": "Zorikwin",
+      "espanol": "fui"
+    },
+    {
+      "ikʉn": "Dʉkchu",
+      "espanol": "bien"
+    },
+    {
+      "ikʉn": "Iwari",
+      "espanol": "ahora"
+    },
+    {
+      "ikʉn": "Arunh",
+      "espanol": "pensar"
+    },
+    {
+      "ikʉn": "Nukwa",
+      "espanol": "estoy"
+    },
+    {
+      "ikʉn": "Mikeywa",
+      "espanol": "ni te voy a decir algo"
+    },
+    {
+      "ikʉn": "Makiuma",
+      "espanol": "regalo"
+    },
+    {
+      "ikʉn": "Mikunaka",
+      "espanol": "traje"
+    },
+    {
+      "ikʉn": "Awwin",
+      "espanol": "acción de nacer"
+    },
+    {
+      "ikʉn": "Ma",
+      "espanol": "iniki algo"
+    },
+    {
+      "ikʉn": "Michwʉn",
+      "espanol": "a verle"
+    },
+    {
+      "ikʉn": "Nakuwin",
+      "espanol": "vine"
+    },
+    {
+      "ikʉn": "Ema’y",
+      "espanol": "aqui"
+    },
+    {
+      "ikʉn": "Aney",
+      "espanol": "rico sabroso"
+    },
+    {
+      "ikʉn": "A’zunhʉwin",
+      "espanol": "estuvo, me supo"
+    },
+    {
+      "ikʉn": "Nukʉnanʉnnon",
+      "espanol": "pregunta"
+    },
+    {
+      "ikʉn": "Nukʉno",
+      "espanol": "nʉn ni afirmación"
+    },
+    {
+      "ikʉn": "Kumʉ/kwi",
+      "espanol": "puedo"
+    },
+    {
+      "ikʉn": "Jwi",
+      "espanol": "día"
+    },
+    {
+      "ikʉn": "Azi",
+      "espanol": "como"
+    },
+    {
+      "ikʉn": "Zary",
+      "espanol": "paso"
+    },
+    {
+      "ikʉn": "Nayo",
+      "espanol": "caminar"
+    },
+    {
+      "ikʉn": "Kʉta",
+      "espanol": "pie"
+    },
+    {
+      "ikʉn": "Komʉ",
+      "espanol": "uña"
+    },
+    {
+      "ikʉn": "Sakukʉ",
+      "espanol": "cabeza o autoridad"
+    },
+    {
+      "ikʉn": "Sakʉn",
+      "espanol": "en la cabeza"
+    },
+    {
+      "ikʉn": "Iwa",
+      "espanol": "Mari y tu"
+    },
+    {
+      "ikʉn": "Gʉcher",
+      "espanol": "cuerpo"
+    },
+    {
+      "ikʉn": "Ɉwawika",
+      "espanol": "corazón"
+    },
+    {
+      "ikʉn": "GoɈin",
+      "espanol": "columna"
+    },
+    {
+      "ikʉn": "Me’tenu",
+      "espanol": "no siento"
+    },
+    {
+      "ikʉn": "Me’Zanu’",
+      "espanol": "siento"
+    },
+    {
+      "ikʉn": "Urakʉ",
+      "espanol": "casa"
+    },
+    {
+      "ikʉn": "Wínuri",
+      "espanol": "carne"
+    },
+    {
+      "ikʉn": "Natanigow",
+      "espanol": "préstame"
+    },
+    {
+      "ikʉn": "Sagunusa",
+      "espanol": "cabello"
+    },
+    {
+      "ikʉn": "Dingú",
+      "espanol": "rizado"
+    },
+    {
+      "ikʉn": "Yun",
+      "espanol": "liso"
+    },
+    {
+      "ikʉn": "Sise",
+      "espanol": "mañana"
+    },
+    {
+      "ikʉn": "Chinu",
+      "espanol": "cerdo"
+    },
+    {
+      "ikʉn": "Anʉchuya",
+      "espanol": "enfermo"
+    },
+    {
+      "ikʉn": "Masite",
+      "espanol": "machete"
+    },
+    {
+      "ikʉn": "Perʉ",
+      "espanol": "perro"
+    },
+    {
+      "ikʉn": "Naníkʉnʉ",
+      "espanol": "verbos"
+    },
+    {
+      "ikʉn": "Nanʉn",
+      "espanol": "ser"
+    },
+    {
+      "ikʉn": "Nanʉn",
+      "espanol": "estar"
+    }
+  ],
+  "pronombres_y_sufijos": [
+    {
+      "ikʉn": "Sin:",
+      "espanol": "con"
+    },
+    {
+      "ikʉn": "Se’:",
+      "espanol": "en el/dentro"
+    },
+    {
+      "ikʉn": "Ri:",
+      "espanol": "el"
+    },
+    {
+      "ikʉn": "Zey:",
+      "espanol": "del"
+    },
+    {
+      "ikʉn": "Ikʉhna",
+      "espanol": "ellos/os"
+    },
+    {
+      "ikʉn": "asin",
+      "espanol": "(con él/ella),"
+    },
+    {
+      "ikʉn": "ari",
+      "espanol": "(y él/y ella),"
+    },
+    {
+      "ikʉn": "ase'",
+      "espanol": "(él.../ella)"
+    },
+    {
+      "ikʉn": "Ɉina",
+      "espanol": "todos/todas"
+    },
+    {
+      "ikʉn": "Youkʉchʉ",
+      "espanol": "todo/tuyo"
+    },
+    {
+      "ikʉn": "Bekʉn",
+      "espanol": "donde"
+    },
+    {
+      "ikʉn": "Anare",
+      "espanol": "estaban"
+    },
+    {
+      "ikʉn": "Ema",
+      "espanol": "este/esta"
+    },
+    {
+      "ikʉn": "Yama",
+      "espanol": "esa/ese"
+    }
+  ],
+  "objetos": [
+    {
+      "ikʉn": "Serurar",
+      "espanol": "celular"
+    },
+    {
+      "ikʉn": "Tareari",
+      "espanol": "tarea"
+    },
+    {
+      "ikʉn": "Salonse’",
+      "espanol": "en el salón"
+    },
+    {
+      "ikʉn": "Usʉnkʉnʉ",
+      "espanol": "rabioso"
+    }
+  ],
+  "direcciones": [
+    {
+      "ikʉn": "Azuray",
+      "espanol": "arriba de / sobre"
+    },
+    {
+      "ikʉn": "A’warey",
+      "espanol": "debajo de"
+    },
+    {
+      "ikʉn": "Cheynʉn",
+      "espanol": "al lado de"
+    },
+    {
+      "ikʉn": "Ukunay",
+      "espanol": "detrás de"
+    },
+    {
+      "ikʉn": "Emay",
+      "espanol": "por aquí"
+    },
+    {
+      "ikʉn": "Yamay",
+      "espanol": "por allá"
+    },
+    {
+      "ikʉn": "Rientun",
+      "espanol": "Al frente"
+    },
+    {
+      "ikʉn": "Zunkukay",
+      "espanol": "Afuera"
+    },
+    {
+      "ikʉn": "Mucheyku",
+      "espanol": "Cerca"
+    },
+    {
+      "ikʉn": "Peykun Kunari",
+      "espanol": "Lejos"
+    },
+    {
+      "ikʉn": "Dukigun",
+      "espanol": "Por la derecha"
+    },
+    {
+      "ikʉn": "Gunsi kiay",
+      "espanol": "Izquierda"
+    }
+  ],
+  "saludos_y_peticiones": [
+    {
+      "ikʉn": "Nakawa",
+      "espanol": "ɉe u: Por favor, regálame agua"
+    },
+    {
+      "ikʉn": "Du",
+      "espanol": "ni: Gracias."
+    },
+    {
+      "ikʉn": "Eygwandi:",
+      "espanol": "De nada / a la orden"
+    },
+    {
+      "ikʉn": "Bay",
+      "espanol": "weri: Vamos."
+    },
+    {
+      "ikʉn": "Ven acá.",
+      "espanol": "Naka u"
+    },
+    {
+      "ikʉn": "Ey",
+      "espanol": "anachukwa: hasta luego"
+    },
+    {
+      "ikʉn": "Gwamu",
+      "espanol": "nukresi: por favor"
+    },
+    {
+      "ikʉn": "Ey",
+      "espanol": "me’juno: quieres"
+    },
+    {
+      "ikʉn": "Du",
+      "espanol": "ni wawawa: Gracias"
+    },
+    {
+      "ikʉn": "Nakawa’u:",
+      "espanol": "regálame"
+    },
+    {
+      "ikʉn": "Ey",
+      "espanol": "nikwawin: presente, aquí estoy"
+    },
+    {
+      "ikʉn": "Nu",
+      "espanol": "Kuni: no está"
+    },
+    {
+      "ikʉn": "Ey",
+      "espanol": "nukwin aquí estoy de pie"
+    },
+    {
+      "ikʉn": "Azi",
+      "espanol": "mezare cómo estás"
+    },
+    {
+      "ikʉn": "Azi",
+      "espanol": "Neki ma muy bien y tu"
+    },
+    {
+      "ikʉn": "Azi",
+      "espanol": "neki bien"
+    },
+    {
+      "ikʉn": "Du",
+      "espanol": "ma dugwi  bien y usted"
+    },
+    {
+      "ikʉn": "Dugwi",
+      "espanol": "bien"
+    },
+    {
+      "ikʉn": "Ma",
+      "espanol": "dugwi y tu/ usted como?"
+    },
+    {
+      "ikʉn": "Kʉmʉ",
+      "espanol": "azi mikʉyao ¿que te han dicho tus sueño?"
+    },
+    {
+      "ikʉn": "Azi",
+      "espanol": "zari bunsi chano como amaneciste"
+    },
+    {
+      "ikʉn": "Azi",
+      "espanol": "zari bunsi chanao como amanecieron"
+    },
+    {
+      "ikʉn": "Kʉmʉ",
+      "espanol": "azi miwikʉyao que les han dicho sus sueños"
+    },
+    {
+      "ikʉn": "Du",
+      "espanol": "zano hola como están"
+    },
+    {
+      "ikʉn": "Du",
+      "espanol": "zʉnin hola estamos bien"
+    },
+    {
+      "ikʉn": "Du",
+      "espanol": "zʉnon ma dugwi  estamos bien y usted cómo está"
+    },
+    {
+      "ikʉn": "Eygwi anáchukwa adiós",
+      "espanol": "nos volveremos a ver"
+    },
+    {
+      "ikʉn": "Jarin",
+      "espanol": "cuidado"
+    },
+    {
+      "ikʉn": "Michwʉn",
+      "espanol": "nakuwin vine a verte"
+    },
+    {
+      "ikʉn": "Miwichwʉn",
+      "espanol": "anakuwin venimos a visitarlo"
+    },
+    {
+      "ikʉn": "na’kawau",
+      "espanol": "me regalas"
+    },
+    {
+      "ikʉn": "ey me’ɉuno",
+      "espanol": "quieres"
+    },
+    {
+      "ikʉn": "Nugwe",
+      "espanol": "u/ nugwe levántate"
+    },
+    {
+      "ikʉn": "Nʉchwa",
+      "espanol": "u/ nʉchu mírame"
+    },
+    {
+      "ikʉn": "Na’we",
+      "espanol": "u / nawesi entrégamelo"
+    },
+    {
+      "ikʉn": "A’Chona",
+      "espanol": "u/ a’Chona sálgase"
+    },
+    {
+      "ikʉn": "Sem",
+      "espanol": "u ríase"
+    },
+    {
+      "ikʉn": "Owma",
+      "espanol": "u báñese"
+    },
+    {
+      "ikʉn": "Kuma",
+      "espanol": "u duerma"
+    },
+    {
+      "ikʉn": "Ga",
+      "espanol": "u coma"
+    },
+    {
+      "ikʉn": "A’ga",
+      "espanol": "u beba"
+    },
+    {
+      "ikʉn": "Nʉnhuzoya",
+      "espanol": "u llévame"
+    },
+    {
+      "ikʉn": "Nʉkʉchwa",
+      "espanol": "u acomapañame"
+    },
+    {
+      "ikʉn": "Naka",
+      "espanol": "u / naka  ven"
+    },
+    {
+      "ikʉn": "Amʉse",
+      "espanol": "levante"
+    }
+  ],
+  "numeros": [
+    {
+      "ikʉn": "Ingwi",
+      "espanol": "uno"
+    },
+    {
+      "ikʉn": "Máykʉnʉ",
+      "espanol": "tres"
+    },
+    {
+      "ikʉn": "Koga",
+      "espanol": "siete"
+    },
+    {
+      "ikʉn": "Awewa",
+      "espanol": "ocho"
+    },
+    {
+      "ikʉn": "Ingwi",
+      "espanol": "uga diez"
+    },
+    {
+      "ikʉn": "Ingwi",
+      "espanol": "uga kʉtow once"
+    },
+    {
+      "ikʉn": "Ingwi",
+      "espanol": "uga mowga kʉtow doce"
+    },
+    {
+      "ikʉn": "Ingwi",
+      "espanol": "uga máykʉnʉ kʉtow trece"
+    },
+    {
+      "ikʉn": "Ingwi",
+      "espanol": "uga ma’keywa kʉtow catorce"
+    },
+    {
+      "ikʉn": "Ingwi",
+      "espanol": "uga asewa kʉtow quince"
+    },
+    {
+      "ikʉn": "Ingwi",
+      "espanol": "uga chinwa kʉtow dieciséis"
+    },
+    {
+      "ikʉn": "Ingwi",
+      "espanol": "uga koga kʉtow diecisiete"
+    },
+    {
+      "ikʉn": "Ingwi",
+      "espanol": "uga awewa kʉtow dieciocho"
+    },
+    {
+      "ikʉn": "Ingwi",
+      "espanol": "uga ikawa kʉtow diecinueve"
+    },
+    {
+      "ikʉn": "Mowga",
+      "espanol": "uga veinte"
+    },
+    {
+      "ikʉn": "Máykʉnʉ",
+      "espanol": "uga treinta"
+    },
+    {
+      "ikʉn": "Ma’keywa",
+      "espanol": "uga cuarenta"
+    },
+    {
+      "ikʉn": "Asewa",
+      "espanol": "uga cincuenta"
+    },
+    {
+      "ikʉn": "Chinwa",
+      "espanol": "uga sesenta"
+    },
+    {
+      "ikʉn": "Koga",
+      "espanol": "uga setenta"
+    },
+    {
+      "ikʉn": "Awewa",
+      "espanol": "uga ochenta"
+    },
+    {
+      "ikʉn": "Ikawa",
+      "espanol": "uga novents"
+    },
+    {
+      "ikʉn": "Ingwi",
+      "espanol": "uga cien"
+    }
+  ],
+  "colores": [
+    {
+      "ikʉn": "Twi",
+      "espanol": "kawa negro"
+    },
+    {
+      "ikʉn": "Si",
+      "espanol": "kawa rojo"
+    },
+    {
+      "ikʉn": "Sugru",
+      "espanol": "kawa"
+    },
+    {
+      "ikʉn": "Chumi",
+      "espanol": "kawa amarillo"
+    },
+    {
+      "ikʉn": "Bunsi",
+      "espanol": "kawa blanco"
+    },
+    {
+      "ikʉn": "Chikiruru/chikirú",
+      "espanol": "kawa verde y azul"
+    }
+  ]
+}

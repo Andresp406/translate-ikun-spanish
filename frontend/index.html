@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ikʉn - Diccionario Interactivo</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="apple-touch-icon" href="favicon.png">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        shazam: {
+                            blue: '#0080FF',
+                            purple: '#8B5CF6',
+                            pink: '#EC4899',
+                            cyan: '#06B6D4',
+                        }
+                    },
+                    fontFamily: {
+                        'sans': ['Inter', 'system-ui', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+    <style>
+        * {
+            font-family: 'Inter', sans-serif;
+        }
+        
+        body {
+            overflow-x: hidden;
+        }
+        
+        /* Gradientes estilo Shazam */
+        .shazam-gradient {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 50%, #f093fb 100%);
+        }
+        
+        .shazam-gradient-blue {
+            background: linear-gradient(135deg, #0080FF 0%, #00D4FF 100%);
+        }
+        
+        .shazam-gradient-purple {
+            background: linear-gradient(135deg, #8B5CF6 0%, #EC4899 100%);
+        }
+        
+        .shazam-gradient-teal {
+            background: linear-gradient(135deg, #06B6D4 0%, #10B981 100%);
+        }
+        
+        /* Efecto glassmorphism */
+        .glass {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+        
+        .glass-dark {
+            background: rgba(0, 0, 0, 0.2);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        
+        /* Animaciones suaves */
+        .smooth-bounce {
+            animation: smoothBounce 2s ease-in-out infinite;
+        }
+        
+        @keyframes smoothBounce {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+        }
+        
+        .fade-in {
+            animation: fadeIn 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        
+        @keyframes fadeIn {
+            from { 
+                opacity: 0; 
+                transform: translateY(20px) scale(0.95);
+            }
+            to { 
+                opacity: 1; 
+                transform: translateY(0) scale(1);
+            }
+        }
+        
+        /* Hover effects estilo Shazam */
+        .card-shazam {
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .card-shazam::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+            transition: left 0.5s;
+        }
+        
+        .card-shazam:hover::before {
+            left: 100%;
+        }
+        
+        .card-shazam:hover {
+            transform: translateY(-8px) scale(1.02);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+        }
+        
+        /* Botón de voz pulsante */
+        .voice-button {
+            animation: voicePulse 2s ease-in-out infinite;
+        }
+        
+        @keyframes voicePulse {
+            0%, 100% {
+                box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.7);
+            }
+            50% {
+                box-shadow: 0 0 0 20px rgba(255, 255, 255, 0);
+            }
+        }
+        
+        /* Ondas de sonido */
+        .sound-wave {
+            animation: soundWave 1s ease-in-out infinite;
+        }
+        
+        @keyframes soundWave {
+            0%, 100% { transform: scaleY(0.5); }
+            50% { transform: scaleY(1); }
+        }
+        
+        /* Input focus estilo Shazam */
+        .input-shazam {
+            transition: all 0.3s ease;
+        }
+        
+        .input-shazam:focus {
+            transform: scale(1.02);
+            box-shadow: 0 10px 30px rgba(0, 128, 255, 0.3);
+        }
+        
+        /* Scroll suave */
+        html {
+            scroll-behavior: smooth;
+        }
+        
+        /* Badge animado */
+        .badge-glow {
+            animation: badgeGlow 2s ease-in-out infinite;
+        }
+        
+        @keyframes badgeGlow {
+            0%, 100% { box-shadow: 0 0 10px rgba(139, 92, 246, 0.5); }
+            50% { box-shadow: 0 0 20px rgba(139, 92, 246, 1); }
+        }
+    </style>
+</head>
+<body class="bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900 dark:from-black dark:via-purple-950 dark:to-black transition-colors duration-500 min-h-screen">
+    <!-- Header estilo Shazam -->
+    <header class="relative overflow-hidden">
+        <!-- Fondo con gradiente animado -->
+        <div class="absolute inset-0 shazam-gradient opacity-90"></div>
+        
+        <div class="relative container mx-auto px-4 py-8 md:py-12">
+            <div class="flex justify-between items-center">
+                <div class="fade-in">
+                    <div class="flex items-center space-x-3 md:space-x-4 mb-2">
+                        <!-- Logo del indígena Arhuaco -->
+                        <div class="w-14 h-14 md:w-20 md:h-20 smooth-bounce">
+                            <img src="logo.png" alt="Logo Ikʉn" class="w-full h-full drop-shadow-2xl">
+                        </div>
+                        <div>
+                            <h1 class="text-3xl md:text-5xl font-black text-white tracking-tight">
+                                Ikʉn
+                            </h1>
+                            <p class="text-sm md:text-base text-white/80 font-medium">Diccionario Interactivo</p>
+                        </div>
+                    </div>
+                    <p class="text-xs md:text-sm text-white/70 font-medium ml-1">✨ Lengua del pueblo Arhuaco</p>
+                </div>
+                
+                <button id="theme-toggle" class="glass p-3 md:p-4 rounded-2xl hover:scale-110 transition-all duration-300 group">
+                    <svg id="theme-icon-dark" class="w-6 h-6 md:w-7 md:h-7 text-white hidden group-hover:rotate-12 transition-transform" fill="currentColor" viewBox="0 0 20 20">
+                        <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path>
+                    </svg>
+                    <svg id="theme-icon-light" class="w-6 h-6 md:w-7 md:h-7 text-white group-hover:rotate-12 transition-transform" fill="currentColor" viewBox="0 0 20 20">
+                        <path fill-rule="evenodd" d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z" clip-rule="evenodd"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        
+        <!-- Decoración de ondas -->
+        <div class="absolute bottom-0 left-0 right-0 h-16 bg-gradient-to-t from-slate-900/50 to-transparent"></div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container mx-auto px-4 py-6 md:py-10 relative">
+        <!-- Estadísticas estilo Shazam (ocultas inicialmente) -->
+        <div id="stats-section" class="mb-8 md:mb-12 grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-6 hidden">
+            <!-- Las estadísticas se cargarán dinámicamente -->
+        </div>
+
+        <!-- Módulo de Traducción con Voz - Estilo Shazam -->
+        <div class="relative mb-8 md:mb-12 fade-in">
+            <!-- Card principal con glassmorphism -->
+            <div class="glass-dark rounded-3xl p-6 md:p-8 shadow-2xl">
+                <!-- Header del traductor -->
+                <div class="flex items-center justify-between mb-6">
+                    <div class="flex items-center space-x-3">
+                        <div class="w-10 h-10 md:w-12 md:h-12 rounded-2xl shazam-gradient-teal flex items-center justify-center">
+                            <svg class="w-6 h-6 md:w-7 md:h-7 text-white" fill="currentColor" viewBox="0 0 20 20">
+                                <path d="M18 3a1 1 0 00-1.196-.98l-10 2A1 1 0 006 5v9.114A4.369 4.369 0 005 14c-1.657 0-3 .895-3 2s1.343 2 3 2 3-.895 3-2V7.82l8-1.6v5.894A4.37 4.37 0 0015 12c-1.657 0-3 .895-3 2s1.343 2 3 2 3-.895 3-2V3z"></path>
+                            </svg>
+                        </div>
+                        <div>
+                            <h2 class="text-xl md:text-2xl font-bold text-white">🎙️ Traductor con Voz</h2>
+                            <p class="text-xs md:text-sm text-white/60 font-medium">Español → Ikʉn</p>
+                        </div>
+                    </div>
+                    <span class="badge-glow px-3 py-1 rounded-full bg-gradient-to-r from-purple-500 to-pink-500 text-white text-xs font-bold">NUEVO</span>
+                </div>
+                
+                <!-- Input y botón -->
+                <div class="space-y-4">
+                    <div>
+                        <label for="translate-input" class="block text-white/80 font-semibold mb-2 text-sm md:text-base">
+                            💬 Escribe en Español
+                        </label>
+                        <input 
+                            type="text" 
+                            id="translate-input" 
+                            placeholder="agua, madre, hola, corazón..."
+                            class="input-shazam w-full px-5 py-4 rounded-2xl bg-white/10 border-2 border-white/20 focus:border-cyan-400 text-white placeholder-white/40 text-base md:text-lg font-medium outline-none"
+                        >
+                    </div>
+                    
+                    <button id="translate-button" class="w-full py-4 rounded-2xl shazam-gradient-teal text-white font-bold text-base md:text-lg shadow-xl hover:shadow-2xl hover:scale-[1.02] transition-all duration-300 flex items-center justify-center space-x-2">
+                        <span>🔄</span>
+                        <span>Traducir Ahora</span>
+                    </button>
+                </div>
+                
+                <!-- Resultado de Traducción -->
+                <div id="translation-result" class="mt-6 hidden">
+                    <div class="glass rounded-2xl p-6 md:p-8 border-2 border-white/30">
+                        <div class="flex items-start justify-between">
+                            <div class="flex-1">
+                                <p class="text-white/60 text-xs md:text-sm font-semibold mb-2 uppercase tracking-wide">Traducción</p>
+                                <h3 id="palabra-ikun" class="text-4xl md:text-5xl lg:text-6xl font-black text-white mb-4 tracking-tight"></h3>
+                                <p class="text-white/80 text-base md:text-lg font-medium" id="significado-ikun"></p>
+                            </div>
+                            <button id="btn-voz" class="voice-button ml-4 p-4 md:p-5 shazam-gradient-purple rounded-full transition-all duration-300 hover:scale-110 group shadow-2xl">
+                                <svg class="w-7 h-7 md:w-8 md:h-8 text-white sound-wave" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M9.383 3.076A1 1 0 0110 4v12a1 1 0 01-1.707.707L4.586 13H2a1 1 0 01-1-1V8a1 1 0 011-1h2.586l3.707-3.707a1 1 0 011.09-.217zM14.657 2.929a1 1 0 011.414 0A9.972 9.972 0 0119 10a9.972 9.972 0 01-2.929 7.071 1 1 0 01-1.414-1.414A7.971 7.971 0 0017 10c0-2.21-.894-4.208-2.343-5.657a1 1 0 010-1.414zm-2.829 2.828a1 1 0 011.415 0A5.983 5.983 0 0115 10a5.984 5.984 0 01-1.757 4.243 1 1 0 01-1.415-1.415A3.984 3.984 0 0013 10a3.983 3.983 0 00-1.172-2.828 1 1 0 010-1.415z" clip-rule="evenodd"></path>
+                                </svg>
+                            </button>
+                        </div>
+                        <div id="additional-translations" class="mt-6 space-y-3">
+                            <!-- Traducciones adicionales aparecerán aquí -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Search Section - Estilo Shazam -->
+        <div class="glass-dark rounded-3xl p-6 md:p-8 mb-8 md:mb-12 fade-in shadow-2xl">
+            <div class="mb-6">
+                <label for="search-input" class="block text-white/80 font-bold mb-3 text-base md:text-lg flex items-center space-x-2">
+                    <span>🔍</span>
+                    <span>Buscar en el Diccionario</span>
+                </label>
+                <div class="relative">
+                    <input 
+                        type="text" 
+                        id="search-input" 
+                        placeholder="Busca en Ikʉn o Español..."
+                        class="input-shazam w-full px-5 py-4 rounded-2xl bg-white/10 border-2 border-white/20 focus:border-purple-400 text-white placeholder-white/40 text-base md:text-lg font-medium outline-none pr-12"
+                    >
+                    <button id="clear-button" class="absolute right-4 top-1/2 transform -translate-y-1/2 text-white/40 hover:text-white/80 transition-colors hidden">
+                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM8.707 7.293a1 1 0 00-1.414 1.414L8.586 10l-1.293 1.293a1 1 0 101.414 1.414L10 11.414l1.293 1.293a1 1 0 001.414-1.414L11.414 10l1.293-1.293a1 1 0 00-1.414-1.414L10 8.586 8.707 7.293z" clip-rule="evenodd"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+            <div class="flex flex-wrap gap-3">
+                <button id="show-all-button" class="px-6 py-3 shazam-gradient-purple text-white rounded-xl hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl font-bold text-sm md:text-base flex items-center space-x-2">
+                    <span>📖</span>
+                    <span>Ver Todo</span>
+                </button>
+                <button id="clear-results-button" class="px-6 py-3 bg-white/10 hover:bg-white/20 text-white rounded-xl transition-all duration-300 font-semibold text-sm md:text-base hidden">
+                    🗑️ Limpiar
+                </button>
+            </div>
+        </div>
+
+        <!-- Results Info -->
+        <div id="results-info" class="mb-6 text-white text-base md:text-lg hidden fade-in">
+            <div class="glass-dark rounded-2xl px-5 py-3 inline-block">
+                <p id="results-count" class="font-bold"></p>
+            </div>
+        </div>
+
+        <!-- Loading Indicator - Estilo Shazam -->
+        <div id="loading" class="text-center py-16 md:py-20 hidden">
+            <div class="relative inline-block">
+                <div class="w-16 h-16 md:w-20 md:h-20 border-4 border-purple-500/30 border-t-purple-500 rounded-full animate-spin"></div>
+                <div class="absolute inset-0 w-16 h-16 md:w-20 md:h-20 border-4 border-transparent border-r-cyan-500 rounded-full animate-spin" style="animation-direction: reverse; animation-duration: 1.5s;"></div>
+            </div>
+            <p class="mt-6 text-white/60 font-medium text-sm md:text-base">Cargando...</p>
+        </div>
+
+        <!-- No Results - Estilo Shazam -->
+        <div id="no-results" class="text-center py-16 md:py-20 hidden fade-in">
+            <div class="glass-dark rounded-3xl p-10 md:p-12 max-w-md mx-auto">
+                <div class="w-20 h-20 md:w-24 md:h-24 mx-auto mb-6 rounded-full shazam-gradient-purple flex items-center justify-center">
+                    <svg class="w-10 h-10 md:w-12 md:h-12 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.172 16.172a4 4 0 015.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                    </svg>
+                </div>
+                <h3 class="text-xl md:text-2xl font-bold text-white mb-3">No se encontró nada</h3>
+                <p class="text-white/60 font-medium text-sm md:text-base">Intenta con otra palabra</p>
+            </div>
+        </div>
+
+        <!-- Results Grid - Estilo Shazam -->
+        <div id="results" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6">
+            <!-- Los resultados se cargarán aquí dinámicamente -->
+        </div>
+    </main>
+
+    <!-- Footer - Estilo Shazam con fondo claro -->
+    <footer class="relative mt-16 md:mt-20 py-10 md:py-12 overflow-hidden bg-gradient-to-b from-slate-50 to-white dark:from-slate-800 dark:to-slate-900">
+        <!-- Decoración de fondo -->
+        <div class="absolute inset-0 bg-gradient-to-br from-purple-100/20 via-blue-100/20 to-cyan-100/20 dark:from-purple-900/10 dark:via-blue-900/10 dark:to-cyan-900/10"></div>
+        
+        <div class="relative container mx-auto px-4">
+            <!-- Logo principal Ikʉn -->
+            <div class="text-center mb-8">
+                <div class="inline-flex items-center space-x-3 bg-white/80 dark:bg-slate-800/80 backdrop-blur-sm px-6 py-3 rounded-full mb-4 shadow-lg border border-gray-200/50 dark:border-gray-700/50">
+                    <div class="w-10 h-10">
+                        <img src="logo.png" alt="Logo Ikʉn" class="w-full h-full drop-shadow-md">
+                    </div>
+                    <span class="text-gray-800 dark:text-white font-bold text-base md:text-lg">Ikʉn</span>
+                </div>
+                <p class="text-gray-600 dark:text-gray-300 text-sm md:text-base font-medium">&copy; 2024 Diccionario Interactivo</p>
+                <p class="text-gray-500 dark:text-gray-400 text-xs md:text-sm mt-2">✨ Preservando la lengua del pueblo Arhuaco</p>
+            </div>
+            
+            <!-- Separador -->
+            <div class="border-t border-gray-300/50 dark:border-gray-600/50 my-6"></div>
+            
+            <!-- Logo Universidad del Magdalena -->
+            <div class="flex flex-col md:flex-row items-center justify-center gap-6">
+                <div class="text-gray-700 dark:text-gray-300 text-sm md:text-base font-semibold">
+                    Proyecto desarrollado en colaboración con:
+                </div>
+                <div class="bg-white dark:bg-slate-800 rounded-2xl px-8 py-6 shadow-xl border border-gray-200 dark:border-gray-700 hover:shadow-2xl transition-all duration-300">
+                    <img src="Escudo_unimag_vectorizado.svg" alt="Universidad del Magdalena" class="h-24 md:h-28 w-auto hover:scale-105 transition-all duration-300">
+                </div>
+            </div>
+            
+            <!-- Créditos adicionales -->
+            <div class="text-center mt-8">
+                <p class="text-gray-500 dark:text-gray-400 text-xs">
+                    Desarrollado con ❤️ para la preservación cultural • Santa Marta, Colombia
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Modal personalizado estilo Shazam -->
+    <div id="custom-modal" class="fixed inset-0 z-50 hidden items-center justify-center p-4">
+        <!-- Overlay con blur -->
+        <div class="absolute inset-0 bg-black/60 backdrop-blur-sm" onclick="closeModal()"></div>
+        
+        <!-- Modal content -->
+        <div id="modal-content" class="relative glass-dark rounded-3xl max-w-2xl w-full max-h-[80vh] overflow-hidden shadow-2xl transform transition-all duration-300 scale-95 opacity-0">
+            <!-- Header del modal -->
+            <div class="relative shazam-gradient p-6 md:p-8">
+                <button onclick="closeModal()" class="absolute top-4 right-4 p-2 rounded-full bg-white/20 hover:bg-white/30 transition-all duration-200 group">
+                    <svg class="w-6 h-6 text-white group-hover:rotate-90 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                    </svg>
+                </button>
+                <div class="flex items-center space-x-3">
+                    <div id="modal-icon" class="w-12 h-12 rounded-2xl bg-white/20 flex items-center justify-center">
+                        <span class="text-2xl"></span>
+                    </div>
+                    <h2 id="modal-title" class="text-2xl md:text-3xl font-black text-white"></h2>
+                </div>
+            </div>
+            
+            <!-- Body del modal -->
+            <div id="modal-body" class="p-6 md:p-8 overflow-y-auto max-h-96 text-white">
+                <!-- Contenido dinámico -->
+            </div>
+            
+            <!-- Footer del modal (opcional) -->
+            <div id="modal-footer" class="border-t border-white/10 p-6 flex justify-end space-x-3">
+                <button onclick="closeModal()" class="px-6 py-3 rounded-xl bg-white/10 hover:bg-white/20 text-white font-semibold transition-all duration-200">
+                    Cerrar
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
